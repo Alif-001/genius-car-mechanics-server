@@ -12,9 +12,6 @@ const port = 5000;
 app.use(cors());
 app.use(express.json());
 
-/* user = genius
-password = VSHLrKkLdXlSkDVE */
-
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.prbxk.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
 
 const client = new MongoClient(uri, {
